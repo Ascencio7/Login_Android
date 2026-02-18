@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#000"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Inicio_de_Sesi_n"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/ediUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/txtBack"
+        android:hint="@string/Nombre_de_Usuario"
+        android:inputType="textPersonName"
+        android:textColor="@color/txtColor" />
+
+    <EditText
+        android:id="@+id/ediPassword"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/txtBack"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:textColor="@color/txtColor" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/LoginButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Iniciar_Sesi_n"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txtOlvido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_recuerda_la_contrase_a"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
